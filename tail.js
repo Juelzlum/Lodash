@@ -7,10 +7,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = (array)=> {
-  return array[0]
+const tail = (arr) => {
+  let newArr = arr.slice(1)
+  let anotherArr = []
+  anotherArr += newArr
+  return anotherArr
 }
 
-
-assertEqual(head([5,6,7]), 6);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+const result = ["Hello", "Lighthouse", "Labs"];
+console.log(tail(result))
+assertEqual(result.length, 3);
