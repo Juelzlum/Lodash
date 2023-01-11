@@ -16,8 +16,8 @@ const eqArrays =(arr1, arr2) => {
       if(arr1[i] !== arr2[i]) {
         return false 
       }
-      
-      
+  
+      //having an else statement here, it will compare both cases, IF is not equal it will return true. 
     
     }
     return true
