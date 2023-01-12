@@ -30,12 +30,12 @@ const letterPosition = String => {
   // logic to update results here
   for(let i = 0 ; i < String.length ; i++ ) { //loop thru string
     //console.log([i])  
-    //making it string as a key
+    //string became a key
     if(String[i] !== ' ') { //ignoring the spaces 
       if(results[String[i]]){ //if result string[i] exisits
       results[String[i]].push(i) //push into an array
     }
-      else{ //if it doesnt,just have as i
+      else{ //if it doesnt,just have as i, keep it as is 
       results[String[i]] = [i]
   }
 
