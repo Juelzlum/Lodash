@@ -1,20 +1,5 @@
-const eqArrays =(arr1, arr2) => {
-  if(arr1.length !== arr2.length) {
-    return false
-  }
-    for(let i = 0 ; i < arr1.length ; i++) {
-      if(arr1[i] !== arr2[i]) {
-        return false 
-      }
-    }
-    return true
-  }
-  
-
-  const assertArraysEqual =(arr1, arr2) => {
-    console.log('Assertion', eqArrays(arr1,arr2))
-  }
-
+const assertEqual = require('./assertEqual')
+const assertArraysEqual = require('./assertArraysEqual')
 
 const without = (arr1, arr2) => {
   let newArray = []
@@ -25,7 +10,6 @@ const without = (arr1, arr2) => {
   }
   return newArray;
 };
-
 
 const middle  = (array) => {
   const index = array.length / 2 //divide by 2 to find the middle point of the array
@@ -49,8 +33,5 @@ const middle  = (array) => {
 
 }
 
-console.log(middle([1, 2])) // => []
-console.log(middle([1, 2, 3])) // => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3]
-console.log(middle([1, 2, 3, 4])) 
-console.log(middle([1, 2, 3, 4, 5, 6]))
+module.exports = middle;
+
