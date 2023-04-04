@@ -1,18 +1,24 @@
 function spinWords(string){
-  // const arrString = string.split(' ')
-  for(const words of string.split(' ')) {
-   const word = words.split('')
-  //  console.log(word)
-   if(word.length > 5) {
-    const reverse = word.reverse().join()
-    // console.log(reverse)
-   }
-  
+ let reverseWord = ''
+ let reverstring = string.split(' ')
+ for(let i = 0; i < reverstring.length; i++) {
+  if(reverseWord) {
+    reverseWord += ' ';
   }
-    
-
-  return reverse
+  if(reverstring[i].length >= 5 ) {
+    reverseWord += reverstring[i].split('').reverse().join("")
+  }
+  else {
+    reverseWord += reverstring[i]
+  }
 }
+  return reverseWord
+ }
 
 
+
+
+
+console.log(spinWords( "Welcome"))
 console.log(spinWords( "Hey fellow warriors"))
+console.log(spinWords( "Just kidding there is still one more"))
