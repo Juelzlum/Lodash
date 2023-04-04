@@ -8,3 +8,4 @@ const tail = (arr) => {
 
 module.exports = tail
 
+console.log(tail(["Hello", "Lighthouse", "Labs"]))
