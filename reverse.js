@@ -16,9 +16,19 @@ function spinWords(string){
  }
 
 
+ //Spread operators
+
+ const sum = (a, b, c) => {
+return a + b + c 
+ }
+
+ const numbers = [1, 2, 3]
+
+ console.log(sum(...numbers))
 
 
 
-console.log(spinWords( "Welcome"))
-console.log(spinWords( "Hey fellow warriors"))
-console.log(spinWords( "Just kidding there is still one more"))
+
+// console.log(spinWords( "Welcome"))
+// console.log(spinWords( "Hey fellow warriors"))
+// console.log(spinWords( "Just kidding there is still one more"))
