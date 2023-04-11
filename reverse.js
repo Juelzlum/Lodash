@@ -15,7 +15,9 @@ function spinWords(string){
   return reverseWord
  }
 
-
+ console.log(spinWords( "Welcome"))
+ console.log(spinWords( "Hey fellow warriors"))
+ console.log(spinWords( "Just kidding there is still one more"))
  //Spread operators
 
  const sum = (a, b, c) => {
@@ -26,9 +28,18 @@ return a + b + c
 
  console.log(sum(...numbers))
 
+const reversed = numbers.reverse()
 
+// console.log(reversed)
 
+//Reversing a String
 
-// console.log(spinWords( "Welcome"))
-// console.log(spinWords( "Hey fellow warriors"))
-// console.log(spinWords( "Just kidding there is still one more"))
+const args = process.argv
+const values = args.slice(2)
+
+const reverse = () => {
+  return values.reverse()
+}
+
+console.log(reverse())
+
