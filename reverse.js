@@ -42,4 +42,3 @@ const reverse = () => {
 }
 
 console.log(reverse())
-
