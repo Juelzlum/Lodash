@@ -2,7 +2,9 @@ const args = process.argv
 const values = args.slice(2)
 
 const obfuscate  = (password) => {
-  
+ for(let i = 0 ; i < password.length; i ++) {
+  console.log(password[i])
+ }
 } 
 
 // Every "a" in the string should be replaced with a "4".
