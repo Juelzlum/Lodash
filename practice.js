@@ -1,9 +1,5 @@
 const  solution =  (str, ending) => {
-  const arr = str.split('')
-  return arr
+return str.endsWith(ending)
 }
+console.log(solution('abcde','cce'))
 
-console.log(solution('abcde','de'))
-
-const word = 'hello'
-console.log(word.split(''))
